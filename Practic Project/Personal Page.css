@@ -219,3 +219,595 @@ footer {
         font-size: 2.3rem;
     }
 }
+/* ============== PRICING PAGE ============== */
+.pricing-hero {
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+    color: white;
+    text-align: center;
+    padding: 4.5rem 1rem 3rem;
+}
+
+.pricing-hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 0.8rem;
+}
+
+.pricing-image-container {
+    text-align: center;
+    margin: 2rem auto;
+    max-width: 1000px;
+}
+
+.pricing-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Pricing Cards */
+.pricing-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 3rem auto;
+}
+
+.pricing-card {
+    background: white;
+    border-radius: 16px;
+    padding: 2.5rem 2rem;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: all 0.4s ease;
+    position: relative;
+    border: 2px solid transparent;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.pricing-card.popular {
+    border-color: #3b82f6;
+    transform: scale(1.05);
+    z-index: 2;
+}
+
+.popular-badge {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #3b82f6;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 6px 20px;
+    border-radius: 9999px;
+    white-space: nowrap;
+}
+
+.pricing-card h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+    color: #0f172a;
+}
+
+.price {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 2rem;
+}
+
+.price .period {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #64748b;
+    display: block;
+    margin-top: 0.5rem;
+}
+
+.features {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 2.5rem;
+}
+
+.features li {
+    padding: 8px 0;
+    color: #334155;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.features li:last-child {
+    border-bottom: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 32px;
+    background-color: #e2e8f0;
+    color: #1e2937;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 9999px;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #cbd5e1;
+    transform: translateY(-2px);
+}
+
+.btn-primary {
+    background-color: #3b82f6;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #2563eb;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .pricing-card.popular {
+        transform: scale(1.02);
+    }
+}
+/* ============== CONTACT PAGE ============== */
+.contact-hero {
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+    color: white;
+    text-align: center;
+    padding: 5rem 1rem 4rem;
+}
+
+.contact-hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+.contact-container {
+    max-width: 1100px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+.contact-form {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form h2 {
+    margin-bottom: 1.8rem;
+    color: #0f172a;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #334155;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #3b82f6;
+}
+
+.btn {
+    padding: 14px 32px;
+    border: none;
+    border-radius: 9999px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #3b82f6;
+    color: white;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.btn-primary:hover {
+    background-color: #2563eb;
+    transform: translateY(-2px);
+}
+
+/* Contact Info */
+.contact-info {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.contact-info h2 {
+    margin-bottom: 1.8rem;
+    color: #0f172a;
+}
+
+.info-item {
+    margin-bottom: 1.6rem;
+}
+
+.info-item strong {
+    display: block;
+    color: #0f172a;
+    margin-bottom: 0.3rem;
+}
+
+.info-item a {
+    color: #3b82f6;
+    text-decoration: none;
+}
+
+.info-item a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .contact-hero {
+        padding: 4rem 1rem 3rem;
+    }
+}
+/* ============== DARK MODE ============== */
+@media (prefers-color-scheme: dark) {
+    :root:not(.light) {
+        --bg-color: #0f172a;
+        --text-color: #e2e8f0;
+    }
+}
+
+.dark {
+    --bg-color: #0f172a;
+    --text-color: #e2e8f0;
+}
+
+.dark body {
+    background-color: #0f172a;
+    color: #e2e8f0;
+}
+
+.dark .contact-form,
+.dark .contact-info,
+.dark .pricing-card {
+    background-color: #1e2937;
+    color: #e2e8f0;
+}
+
+.dark input,
+.dark textarea {
+    background-color: #334155;
+    color: #e2e8f0;
+    border-color: #475569;
+}
+
+.dark .navbar {
+    background-color: #020617;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    margin-left: 1rem;
+}
+
+.theme-toggle:hover {
+    background-color: rgba(255,255,255,0.1);
+    transform: rotate(30deg);
+}
+/* ============== ABOUT PAGE ============== */
+.about-hero {
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+    color: white;
+    text-align: center;
+    padding: 5rem 1rem 4rem;
+}
+
+.about-hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 0.8rem;
+}
+
+.about-container {
+    max-width: 1100px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.about-img {
+    width: 100%;
+    max-width: 380px;
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.about-text p {
+    font-size: 1.08rem;
+    margin-bottom: 1.4rem;
+    color: #334155;
+}
+
+/* Skills */
+.skills-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
+}
+
+.skill-item {
+    background: white;
+    padding: 1.2rem;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(59, 130, 246, 0.2);
+}
+
+/* Dark Mode Support */
+.dark .about-text p,
+.dark .skills-section h2 {
+    color: #e2e8f0;
+}
+
+.dark .skill-item {
+    background-color: #1e2937;
+    color: #e2e8f0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .about-img {
+        max-width: 280px;
+        margin: 0 auto;
+    }
+}
+/* ============== PROJECTS PAGE ============== */
+.projects-hero {
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+    color: white;
+    text-align: center;
+    padding: 5rem 1rem 4rem;
+}
+
+.projects-hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 0.8rem;
+}
+
+.projects-container {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.project-img img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 1.8rem;
+}
+
+.project-info h3 {
+    margin-bottom: 0.8rem;
+    color: #0f172a;
+}
+
+.project-info p {
+    color: #475569;
+    margin-bottom: 1.2rem;
+    line-height: 1.6;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.tech-stack span {
+    background: #f1f5f9;
+    padding: 4px 12px;
+    border-radius: 9999px;
+    font-size: 0.85rem;
+    color: #334155;
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-small {
+    flex: 1;
+    text-align: center;
+    padding: 10px 16px;
+    font-size: 0.95rem;
+}
+
+.github {
+    background-color: #181717;
+    color: white;
+}
+
+.github:hover {
+    background-color: #0a0a0a;
+}
+
+/* Dark Mode */
+.dark .project-card {
+    background-color: #1e2937;
+}
+
+.dark .project-info h3,
+.dark .project-info p {
+    color: #e2e8f0;
+}
+
+.dark .tech-stack span {
+    background: #334155;
+    color: #cbd5e1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+}
+/* ============== DARK MODE ============== */
+.dark {
+    --bg-color: #0f172a;
+    --text-color: #e2e8f0;
+    --card-bg: #1e2937;
+    --accent: #3b82f6;
+}
+
+.dark body {
+    background-color: #0f172a;
+    color: #e2e8f0;
+}
+
+.dark .hero {
+    background: linear-gradient(135deg, #020617 0%, #1e3a8a 100%);
+}
+
+.dark .about,
+.dark .projects,
+.dark .contact {
+    color: #e2e8f0;
+}
+
+.dark h2,
+.dark h1,
+.dark .hero-text h1 {
+    color: #f1f5f9;
+}
+
+.dark p,
+.dark .section-intro,
+.dark .project-list a {
+    color: #cbd5e1;
+}
+
+.dark .pricing-card,
+.dark .contact-form,
+.dark .contact-info,
+.dark .project-card {
+    background-color: #1e2937;
+}
+
+.dark input,
+.dark textarea {
+    background-color: #334155;
+    color: #e2e8f0;
+    border-color: #475569;
+}
+
+.dark .social-btn {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Navbar */
+.dark .navbar {
+    background-color: #020617;
+}
+
+/* Theme Toggle */
+.theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+    background-color: rgba(255,255,255,0.1);
+}

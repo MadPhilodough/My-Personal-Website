@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pricing Plans - Professional Web Development Services by Jonathan Stewart">
+    <title>Pricing | Jonathan Stewart</title>
+    
+    <link rel="stylesheet" href="Personal Page.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="Practice-index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="pricing.html" class="active">Pricing</a></li>
+            </ul>
+            <!-- Dark Mode Toggle -->
+            <button id="themeToggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+                🌙
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="pricing-hero">
+            <h1>Pricing Plans</h1>
+            <p class="subtitle">Choose the perfect package for your website</p>
+        </section>
+
+        <!-- Image Fallback / Visual Aid -->
+        <div class="pricing-image-container">
+            <img src="images/Professional Web Pricing Table 3 Tiers.png" 
+                 alt="Pricing Table Overview" 
+                 class="pricing-image">
+        </div>
+
+        <!-- Live Pricing Cards -->
+        <section class="pricing-container">
+            <!-- Starter -->
+            <div class="pricing-card">
+                <h3>Starter</h3>
+                <div class="price">$299<span class="period">one-time</span></div>
+                <ul class="features">
+                    <li>✅ 1-Page Website</li>
+                    <li>✅ Fully Responsive</li>
+                    <li>✅ Contact Form</li>
+                    <li>✅ Basic SEO</li>
+                    <li>✅ 30 Days Support</li>
+                </ul>
+                <a href="contact.html" class="btn">Get Starter</a>
+            </div>
+
+            <!-- Professional (Recommended) -->
+            <div class="pricing-card popular">
+                <div class="popular-badge">Most Popular</div>
+                <h3>Professional</h3>
+                <div class="price">$799<span class="period">one-time</span></div>
+                <ul class="features">
+                    <li>✅ 3–6 Page Website</li>
+                    <li>✅ Custom Design</li>
+                    <li>✅ Blog/News Section</li>
+                    <li>✅ Advanced SEO</li>
+                    <li>✅ Google Analytics</li>
+                    <li>✅ 3 Months Support</li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary">Choose Professional</a>
+            </div>
+
+            <!-- Premium -->
+            <div class="pricing-card">
+                <h3>Premium</h3>
+                <div class="price">$1,499<span class="period">one-time</span></div>
+                <ul class="features">
+                    <li>✅ Up to 10 Pages</li>
+                    <li>✅ E-commerce Ready</li>
+                    <li>✅ Custom Animations</li>
+                    <li>✅ Full SEO + Performance</li>
+                    <li>✅ CMS Integration</li>
+                    <li>✅ 6 Months Support</li>
+                </ul>
+                <a href="contact.html" class="btn">Go Premium</a>
+            </div>
+        </section>
+    </main>
+<script>
+        // === DARK MODE LOGIC ===
+        const themeToggle = document.getElementById('themeToggle');
+        
+        function setTheme(isDark) {
+            if (isDark) {
+                document.documentElement.classList.add('dark');
+                themeToggle.textContent = '☀️';
+                localStorage.setItem('theme', 'dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+                themeToggle.textContent = '🌙';
+                localStorage.setItem('theme', 'light');
+            }
+        }
+</script>
+    <footer>
+        <p>&copy; 2026 Jonathan Stewart. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

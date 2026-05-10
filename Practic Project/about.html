@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Jonathan Stewart - Junior Web Developer passionate about creating beautiful and functional websites.">
+    <title>About Me | Jonathan Stewart</title>
+    
+    <link rel="stylesheet" href="Personal Page.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="Practice-index.html">Home</a></li>
+                <li><a href="about.html" class="active">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            
+            <!-- Dark Mode Toggle -->
+            <button id="themeToggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+                🌙
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-hero">
+            <h1>About Me</h1>
+            <p class="subtitle">Junior Web Developer &amp; Problem Solver</p>
+        </section>
+
+        <div class="about-container">
+            <div class="about-content">
+                <img src="images/Ss9lt.jpg" 
+                     alt="Jonathan Stewart" 
+                     class="about-img">
+
+                <div class="about-text">
+                    <h2>Hello, I'm Jonathan Stewart!</h2>
+                    
+                    <p>I'm a junior web developer with a real passion for turning ideas into clean, responsive, and user-friendly websites. What excites me most is creating digital experiences that not only look great but actually make people's lives easier and more enjoyable.</p>
+                    
+                    <p>I specialize in front-end development and have built a strong foundation in HTML, CSS, and JavaScript. I love crafting beautiful, intuitive interfaces and bringing designs to life with smooth interactions.</p>
+                    
+                    <p>My journey into coding began at Oakland Community College. What started as curiosity quickly turned into a passion — I was hooked by the magic of writing code and instantly seeing a website come to life. That blend of creativity and problem-solving keeps me motivated every day.</p>
+                    
+                    <p>I'm particularly drawn to turning complex problems into simple, elegant solutions while keeping performance, accessibility, and clean code in mind. Right now, my goal is to grow as a confident front-end developer by mastering modern tools like React and Tailwind CSS, gaining real-world experience, and contributing to meaningful projects.</p>
+                </div>
+            </div>
+
+            <!-- Skills Section -->
+            <section class="skills-section">
+                <h2>Skills &amp; Technologies</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">HTML5</div>
+                    <div class="skill-item">CSS3</div>
+                    <div class="skill-item">JavaScript</div>
+                    <div class="skill-item">Tailwind CSS</div>
+                    <div class="skill-item">Responsive Design</div>
+                    <div class="skill-item">Git &amp; GitHub</div>
+                    <div class="skill-item">SEO Basics</div>
+                    <div class="skill-item">UI/UX Principles</div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Jonathan Stewart. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Dark Mode Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        
+        function setTheme(isDark) {
+            if (isDark) {
+                document.documentElement.classList.add('dark');
+                themeToggle.textContent = '☀️';
+                localStorage.setItem('theme', 'dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+                themeToggle.textContent = '🌙';
+                localStorage.setItem('theme', 'light');
+            }
+        }
+
+        function initTheme() {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme) {
+                setTheme(savedTheme === 'dark');
+            } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                setTheme(true);
+            }
+        }
+
+        themeToggle.addEventListener('click', () => {
+            setTheme(!document.documentElement.classList.contains('dark'));
+        });
+
+        initTheme();
+    </script>
+</body>
+</html>
